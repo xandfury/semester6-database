@@ -1,0 +1,97 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Semester6-database by spunkpike</title>
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script src="javascripts/respond.js"></script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <!--[if lt IE 8]>
+    <link rel="stylesheet" href="stylesheets/ie.css">
+    <![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+  </head>
+  <body>
+      <div id="header">
+        <nav>
+          <li class="fork"><a href="https://github.com/spunkpike/semester6-database">View On GitHub</a></li>
+          <li class="downloads"><a href="https://github.com/spunkpike/semester6-database/zipball/master">ZIP</a></li>
+          <li class="downloads"><a href="https://github.com/spunkpike/semester6-database/tarball/master">TAR</a></li>
+          <li class="title">DOWNLOADS</li>
+        </nav>
+      </div><!-- end header -->
+
+    <div class="wrapper">
+
+      <section>
+        <div id="title">
+          <h1>Semester6-database</h1>
+          <p>The tables and database example of 6th semester of Kirori Mal College</p>
+          <hr>
+          <span class="credits left">Project maintained by <a href="https://github.com/spunkpike">spunkpike</a></span>
+          <span class="credits right">Hosted on GitHub Pages &mdash; Theme by <a href="https://twitter.com/michigangraham">mattgraham</a></span>
+        </div>
+
+        <h1>
+<a id="this-is-the-general-purpose-database-for-the-sixth-semester-for-databases-course-of-kirori-mal-college" class="anchor" href="#this-is-the-general-purpose-database-for-the-sixth-semester-for-databases-course-of-kirori-mal-college" aria-hidden="true"><span class="octicon octicon-link"></span></a>This is the general purpose database for the sixth semester for databases course of Kirori Mal College.</h1>
+
+<p>For those who are using #mysql and are lazy enough to not create required relations and populate them with data, this is the pre-configured sql file. They may simply run queries. For those using sql server however, this file isn't much of help to them.</p>
+
+<h1>
+<a id="follow-the-steps-to-install-this-sql-file" class="anchor" href="#follow-the-steps-to-install-this-sql-file" aria-hidden="true"><span class="octicon octicon-link"></span></a>Follow the steps to install this sql file:</h1>
+
+<pre><code>* Uncompress the zip file that you download
+* Go to my computer. And the C drive
+* Open xampp folder (or similar) (If you do not have an xampp folder proceed to next step)
+* Open mysql/bin and paste the .sql file there.
+* Execute the following commands though cmd.exe (You can run cmd.exe from Start -&gt; Run -&gt; cmd.exe. ENTER)
+</code></pre>
+
+<pre><code>&gt; cd c:\xampp\mysql\bin
+// If You hdid not have a xampp folder in step 3 of above steps:
+// run    &gt; cd c:\mysql\bin       instead.
+&gt; mysql -u root
+// You will now see mysql prompt
+mysql&gt; CREATE DATABASE 6sem;
+mysql&gt; mysql -u root -p 6sem &lt; kmcollege.sql
+</code></pre>
+
+<h1>
+<a id="when-done-you-can-now-change-the-database-and-see-the-tables-that-already-have-been-created" class="anchor" href="#when-done-you-can-now-change-the-database-and-see-the-tables-that-already-have-been-created" aria-hidden="true"><span class="octicon octicon-link"></span></a>When done you can now change the database and see the tables that already have been created.</h1>
+
+<pre><code>mysql&gt; use 6sem;
+mysql&gt; show tables;
+
+</code></pre>
+
+<p>The various tables can be viewed by the following command:</p>
+
+<pre><code>mysql&gt; describe dependent;
+mysql&gt; describe employee;
+mysql&gt; describe works_on;
+mysql&gt; describe department;
+
+</code></pre>
+
+<h3>
+<a id="authors-and-contributors" class="anchor" href="#authors-and-contributors" aria-hidden="true"><span class="octicon octicon-link"></span></a>Authors and Contributors</h3>
+
+<p>Made with &lt;3 by <a href="https://github.com/spunkpike" class="user-mention">@spunkpike</a>. You can contribute and I will add you name in the contributors list when I have the time</p>
+
+<h3>
+<a id="support-or-contact" class="anchor" href="#support-or-contact" aria-hidden="true"><span class="octicon octicon-link"></span></a>Support or Contact</h3>
+
+<p>Having trouble with Pages? Report an issue with mailto:<a href="mailto:abhinav.saxena.57@gmail.com">abhinav.saxena.57@gmail.com</a></p>
+      </section>
+
+    </div>
+    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
+    
+  </body>
+</html>
